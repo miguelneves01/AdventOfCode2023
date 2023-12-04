@@ -44,7 +44,7 @@ public class Main {
             for (int j = 0; j < width; j++) {
 
                 char ch = inputMatrix[i][j];
-                if (ch == '.' || Character.isDigit(ch)) {
+                if (ch != '*' || Character.isDigit(ch)) {
                     continue;
                 }
                 List<Number> adjacentNumbers = new ArrayList<>();
